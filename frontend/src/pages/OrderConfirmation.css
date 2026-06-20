@@ -1,0 +1,211 @@
+.order-confirmation {
+  min-height: calc(100vh - var(--header-height));
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--color-offwhite);
+}
+
+.order-confirmation__content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.order-confirmation__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-gold);
+  border-radius: 50%;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-charcoal);
+}
+
+.order-confirmation__title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
+}
+
+.order-confirmation__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.order-confirmation__order-id {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.order-confirmation__details {
+  background-color: var(--color-offwhite);
+  border: 1px solid #E8E8E5;
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  text-align: left;
+  margin-bottom: var(--spacing-xl);
+}
+
+.order-confirmation__section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.order-confirmation__section:last-child {
+  margin-bottom: 0;
+}
+
+.order-confirmation__section h2 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+/* Order Items */
+.order-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid #E8E8E5;
+}
+
+.order-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.order-item-name {
+  font-size: 0.875rem;
+  color: var(--color-text-primary);
+}
+
+.order-item-qty {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.order-item-price {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+/* Totals */
+.order-totals {
+  padding-top: var(--spacing-md);
+}
+
+.order-total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-xs) 0;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+}
+
+.order-total-row--bold {
+  font-weight: 600;
+  color: var(--color-text-primary);
+  font-size: 1.125rem;
+  border-top: 2px solid var(--color-text-primary);
+  padding-top: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
+}
+
+/* Shipping Address */
+.shipping-address {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Status Timeline */
+.status-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.status-step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  opacity: 0.5;
+}
+
+.status-step--completed {
+  opacity: 1;
+}
+
+.status-step__marker {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.status-step--completed .status-step__marker {
+  background-color: var(--color-gold);
+  color: var(--color-charcoal);
+}
+
+.status-step__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-step__label {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.status-step__date {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* Actions */
+.order-confirmation__actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+/* Not Found */
+.order-confirmation__not-found {
+  text-align: center;
+  padding: var(--spacing-3xl);
+}
+
+.order-confirmation__not-found h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.order-confirmation__not-found p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .order-confirmation__actions {
+    flex-direction: column;
+  }
+}
